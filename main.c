@@ -1,14 +1,40 @@
 #include <stdio.h>
 #include <string.h>
-#include <unistd.h>
+#include <stdlib.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <math.h>
+
+#ifdef _MSC_VER
+#include <windows.h>
+#else
+#include <unistd.h>
+#endif
 
 #define WIDTH 165
 #define HEIGHT 42
 
 #define FPS_COUNT 60
+
+#ifdef _MSC_VER
+void sleep(float sec) {
+	Sleep(sec * 100);
+}
+
+void clearConsole() {
+	system("cls");
+}
+
+#else
+void sleep(float sec) {
+	usleep(sec * 1000000);
+}
+
+void clearConsole() {
+	system("clear");
+}
+
+#endif
 
 typedef struct Vector3F_Type {
 	float x, y, z;
@@ -55,7 +81,7 @@ void clear(Buffer* buff) {
 }
 
 void draw(const Buffer* buff) {
-	system("clear");
+	clearConsole();
 
 	for (int i = 0; i < HEIGHT; i++) {
 		for (int j = 0; j < WIDTH; j++) {
@@ -65,7 +91,7 @@ void draw(const Buffer* buff) {
 		putchar('\n');
 	}
 
-	usleep(1000 / FPS_COUNT * 1000);
+	sleep(1.f / FPS_COUNT);
 }
 
 void addVertex(Buffer* buff, vec3f v, char c) {

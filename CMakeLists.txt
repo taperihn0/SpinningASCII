@@ -9,5 +9,5 @@ if (MATH_LIBRARY)
 	target_link_libraries(SpinASCII PUBLIC ${MATH_LIBRARY})
 endif()
 
-set(FLAGS -Wall -O2)
+set(FLAGS -Wall -O3)
 target_compile_options(SpinASCII PRIVATE ${FLAGS})
