@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/szymek/Source/SpiningASCII
+CMAKE_SOURCE_DIR = /home/szymek/Source/SpinningASCII
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/szymek/Source/SpiningASCII/build
+CMAKE_BINARY_DIR = /home/szymek/Source/SpinningASCII/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/SpinASCII.dir/clean
 CMakeFiles/SpinASCII.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpinASCII.dir/build.make CMakeFiles/SpinASCII.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SpinASCII.dir/build.make CMakeFiles/SpinASCII.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/szymek/Source/SpiningASCII/build/CMakeFiles --progress-num=1,2 "Built target SpinASCII"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/szymek/Source/SpinningASCII/build/CMakeFiles --progress-num=1,2 "Built target SpinASCII"
 .PHONY : CMakeFiles/SpinASCII.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SpinASCII.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymek/Source/SpiningASCII/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymek/Source/SpinningASCII/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SpinASCII.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymek/Source/SpiningASCII/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/szymek/Source/SpinningASCII/build/CMakeFiles 0
 .PHONY : CMakeFiles/SpinASCII.dir/rule
 
 # Convenience name for target.

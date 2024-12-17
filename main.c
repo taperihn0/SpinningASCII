@@ -17,7 +17,7 @@
 #define FPS_COUNT 60
 
 #ifdef _MSC_VER
-void sleep(float sec) {
+void sleep_s(float sec) {
 	Sleep(sec * 100);
 }
 
@@ -26,7 +26,7 @@ void clearConsole() {
 }
 
 #else
-void sleep(float sec) {
+void sleep_s(float sec) {
 	usleep(sec * 1000000);
 }
 
@@ -91,7 +91,7 @@ void draw(const Buffer* buff) {
 		putchar('\n');
 	}
 
-	sleep(1.f / FPS_COUNT);
+	sleep_s(1.f / FPS_COUNT);
 }
 
 void addVertex(Buffer* buff, vec3f v, char c) {
