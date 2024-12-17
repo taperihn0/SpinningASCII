@@ -1,3 +1,3 @@
 #!/bin/sh
 
-gcc main.c -lm -o build/out
+gcc main.c -O2 -lm -o build/out
