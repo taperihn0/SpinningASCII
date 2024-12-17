@@ -1,0 +1,3 @@
+/home/szymek/Source/SpiningASCII/build/CMakeFiles/SpinASCII.dir
+/home/szymek/Source/SpiningASCII/build/CMakeFiles/edit_cache.dir
+/home/szymek/Source/SpiningASCII/build/CMakeFiles/rebuild_cache.dir

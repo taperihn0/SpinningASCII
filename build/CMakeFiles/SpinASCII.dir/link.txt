@@ -1,0 +1,1 @@
+/usr/bin/gcc CMakeFiles/SpinASCII.dir/main.c.o -o SpinASCII  -lm 

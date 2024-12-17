@@ -1,4 +1,3 @@
 #!/bin/sh
 
-cd build
-./out
+./build/SpinASCII
